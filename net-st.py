@@ -32,6 +32,7 @@ def print_help():
     print("  -bits     Test internet speed in Mega Bits per Second (Mbps)")
     print("  -bytes    Test internet speed in Mega Bytes per Second (MBps)")
     print("  -h, -help Show this help message")
+    print("Developed by Psharkcat in github.")
 
 def main():
     if len(sys.argv) < 2:
@@ -45,7 +46,7 @@ def main():
         elif arg in ("-h", "-help"):
             print_help()
         else:
-            print_help()
+            print("Invalid argument. Use '-h' or '--help' for more information.")
 
 if __name__ == "__main__":
     main()
